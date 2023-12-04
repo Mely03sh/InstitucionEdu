@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Alumnos por Grado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <img src="39 (1).png" alt="Escudo del colegio">
+        <h1>IE San Juan Bautista</h1>
+    </header>
+
+    <div class="consulta-container" style="flex: 1; padding: 20px; background-color: #f0f0f0; border-radius: 10px;">
+        <h2>Consulta de Alumnos por Grado</h2>
+        <!-- Formulario para consultar la cantidad de alumnos en un grado -->
+        <form action="consulta_grado.php" method="post" class="consulta-form">
+            <label for="id_grado">ID del Grado:</label>
+            <input type="number" id="id_grado" name="id_grado" required>
+            <button type="submit">Consultar</button>
+        </form>
+    </div>
+
+    <footer class="footer" style="background-color: #333; color: #fff; text-align: center; padding: 10px;">
+        <p>Dirección: Corregimiento Flecha Sevilla Chinú, Córdoba, Teléfono: 7751038 - 3126077116</p>
+    </footer>
+</body>
+</html>

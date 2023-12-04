@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Encabezado del formulario -->
+    <title>Registro de Estudiante con Acudiente Existente</title>
+    <style>
+        .header {
+            background-color: #4CAF50;
+            /* Fondo verde más claro para el encabezado */
+            color: #ffffff;
+            /* Texto blanco para el encabezado */
+            text-align: center;
+            padding: 10px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            /* Fondo blanco */
+            color: #4CAF50;
+            /* Texto verde más claro */
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #eff6ef;
+            /* Color verde claro */
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        fieldset {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #ffffff;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #4CAF50;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Encabezado del formulario -->
+    <header class="header">
+        <img src="39 (1).png" alt="Escudo del colegio">
+        <h1>Formulario de Matrícula</h1>
+    </header>
+    <h2>Registro de Estudiante con Acudiente Existente</h2>
+
+    <form action="procesar_registro.php" method="post">
+        <!-- Datos del Estudiante -->
+        <fieldset>
+            <legend>Datos del Estudiante</legend>
+
+            <!-- ID del Estudiante (número) -->
+            <label for="id_estudiante">ID del Estudiante<span class="asterisco">*</span>:</label>
+            <input type="number" id="id_estudiante" name="id_estudiante" required>
+
+            <!-- Tipo de ID (texto) -->
+            <label for="tipo_id">Tipo de ID<span class="asterisco">*</span>:</label>
+            <input type="text" id="tipo_id" name="tipo_id" required>
+
+            <!-- Nombres (texto) -->
+            <label for="nombre">Nombres<span class="asterisco">*</span>:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <!-- Apellidos (texto) -->
+            <label for="apellidos">Apellidos<span class="asterisco">*</span>:</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+
+            <!-- Fecha de Nacimiento (fecha) -->
+            <label for="fecha_nacimiento">Fecha de Nacimiento<span class="asterisco">*</span>:</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+
+            <!-- Dirección (texto) -->
+            <label for="direccion">Dirección<span class="asterisco">*</span>:</label>
+            <input type="text" id="direccion" name="direccion" required>
+
+            <!-- Discapacidad (texto) -->
+            <label for="discapacidad">Discapacidad<span class="asterisco">*</span>:</label>
+            <input type="text" id="discapacidad" name="discapacidad" required>
+
+            <!-- País de Origen (texto) -->
+            <label for="pais_origen">País de Origen<span class="asterisco">*</span>:</label>
+            <input type="text" id="pais_origen" name="pais_origen" required>
+
+            <!-- Correo (texto) -->
+            <label for="correo">Correo<span class="asterisco">*</span>:</label>
+            <input type="text" id="correo" name="correo" required>
+
+            <!-- Sisbén (texto) -->
+            <label for="sisben">Sisbén<span class="asterisco">*</span>:</label>
+            <input type="text" id="sisben" name="sisben" required>
+
+            <!-- Sector (texto) -->
+            <label for="sector">Sector<span class="asterisco">*</span>:</label>
+            <input type="text" id="sector" name="sector" required>
+
+            <!-- Calendario (texto) -->
+            <label for="calendario">Calendario<span class="asterisco">*</span>:</label>
+            <input type="text" id="calendario" name="calendario" required>
+
+            <!-- Dane (número) -->
+            <label for="dane">Dane<span class="asterisco">*</span>:</label>
+            <input type="number" id="dane" name="dane" required>
+
+            <!-- Estado (texto) -->
+            <label for="estado">Estado<span class="asterisco">*</span>:</label>
+            <input type="text" id="estado" name="estado" required>
+
+        </fieldset>
+
+        <!-- Datos del Acudiente Existente -->
+        <h3>Datos del Acudiente Existente</h3>
+
+        <label for="id_acudiente">ID Acudiente:</label>
+        <input type="text" name="id_acudiente" required><br>
+
+        <fieldset>
+            <legend>Datos de la Sede</legend>
+
+            <!-- ID de la Sede (número) -->
+            <label for="id_sede">ID de la Sede<span class="asterisco">*</span>:</label>
+            <input type="number" id="id_sede" name="id_sede" required>
+
+            <!-- Nombre de la Sede (texto) -->
+            <label for="nombre_sede">Nombre de la Sede<span class="asterisco">*</span>:</label>
+            <input type="text" id="nombre_sede" name="nombre_sede" required>
+
+            <!-- Dirección de la Sede (texto) -->
+            <label for="direccion_sede">Dirección de la Sede<span class="asterisco">*</span>:</label>
+            <input type="text" id="direccion_sede" name="direccion_sede" required>
+        </fieldset>
+
+        <!-- Datos del Grado y Grupo -->
+        <fieldset>
+            <legend>Datos del Grado y Grupo</legend>
+
+            <!-- ID del Grado (número) -->
+            <label for="id_grado">ID del Grado<span class="asterisco">*</span>:</label>
+            <input type="number" id="id_grado" name="id_grado" required>
+
+            <!-- ID del Grupo (número) -->
+            <label for="id_grupo">ID del Grupo<span class="asterisco">*</span>:</label>
+            <input type="number" id="id_grupo" name="id_grupo" required>
+        </fieldset>
+
+        <!-- Campos relacionados (por ejemplo, fecha de matrícula) -->
+        <label for="fecha_matricula">Fecha de Matrícula:</label>
+        <input type="date" name="fecha_matricula" required><br>
+
+        <!-- Botón de envío -->
+        <input type="submit" value="Matricular Estudiante">
+    </form>
+</body>
+
+</html>

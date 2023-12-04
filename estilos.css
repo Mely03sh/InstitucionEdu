@@ -1,0 +1,87 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Fondo gris claro */
+}
+
+.header {
+    background-color: #4CAF50; /* Verde claro */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.header img {
+    width: 50px;
+    height: 50px;
+}
+
+.menu {
+    background-color: #4CAF50; /* Verde claro */
+    padding: 10px;
+    text-align: center;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.consulta-container {
+    flex: 1;
+    padding: 20px;
+    background-color: #E0F2F1; /* Verde claro más claro */
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.consulta-container h2 {
+    color: #333;
+}
+
+.consulta-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.consulta-form label {
+    margin-bottom: 5px;
+}
+
+.consulta-form input {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.consulta-form button {
+    padding: 10px;
+    background-color: #4CAF50; /* Verde claro */
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer {
+    background-color: #4CAF50; /* Verde claro */
+    color: #fff;
+    text-align: center;
+    padding: 10px; /* Ajustado a 10px */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

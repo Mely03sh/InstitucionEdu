@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IE San Juan Bautista</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Fondo gris claro */
+        }
+
+        .header {
+            background-color: #4CAF50; /* Verde claro */
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .header img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .menu {
+            background-color: #4CAF50; /* Verde claro */
+            padding: 10px;
+            text-align: center;
+        }
+
+        .menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .menu ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .consulta-container {
+            flex: 1;
+            padding: 20px;
+            background-color: #E0F2F1; /* Verde claro más claro */
+            border-radius: 10px;
+            margin: 10px;
+        }
+
+        .consulta-container h2 {
+            color: #333;
+        }
+
+        .consulta-form {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+        }
+
+        .consulta-form label {
+            margin-bottom: 5px;
+        }
+
+        .consulta-form input {
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .consulta-form button {
+            padding: 10px;
+            background-color: #4CAF50; /* Verde claro */
+            color: #fff;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .footer {
+            background-color: #4CAF50; /* Verde claro */
+            color: #fff;
+            text-align: center;
+            padding: 10px; /* Ajustado a 10px */
+            position: relative;
+            margin-top: 20px; /* Nueva propiedad para evitar la superposición */
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <img src="39 (1).png" alt="Escudo del colegio">
+        <h1>IE San Juan Bautista</h1>
+    </header>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="formulario_nuevo.html">Matrícula de Alumnos Nuevos</a></li>
+            <li><a href="formulario_actualizar_alumno.html">Matricula con acudiente existente</a></li>
+        </ul>
+    </nav>
+
+    <div class="consulta-container">
+        <h2>Consulta de Matrícula</h2>
+        <form action="consulta.php" method="post" class="consulta-form">
+            <label for="id_consulta">ID del Estudiante o Acudiente:</label>
+            <input type="number" id="id_consulta" name="id_consulta" required>
+            <button type="submit">Consultar</button>
+        </form>
+    </div>
+
+    <div class="consulta-container">
+        <h2>Listado de Grados con Promedio de Edades:</h2>
+        <form action="promedioedades.php" method="get">
+            <button type="submit">Mostrar Listado de Grados con Promedio</button>
+        </form>
+    </div>
+
+    <div class="consulta-container">
+        <h2>Consultar Total de Estudiantes por Sexo y Grado:</h2>
+        <form action="genero_est.php" method="post">
+            <button type="submit">Mostrar Total de Estudiantes por Sexo y Grado</button>
+        </form>
+    </div>
+
+    <div class="consulta-container">
+        <h2>Lista de Estudiantes por Grado y Grupo</h2>
+        <form action="lista_estudiantes.php" method="post">
+            <label for="grado">Grado:</label>
+            <input type="number" name="grado" required>
+            <label for="grupo">Grupo:</label>
+            <input type="text" name="grupo" required>
+            <button type="submit">Consultar</button>
+        </form>
+    </div>
+</body>
+
+<footer class="footer">
+    <p>Dirección: Corregimiento Flecha Sevilla Chinú, Córdoba, Teléfono: 7751038 - 3126077116</p>
+</footer>
+
+</html>

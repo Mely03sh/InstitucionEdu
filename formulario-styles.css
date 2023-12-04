@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff; /* Fondo blanco */
+  color: #4CAF50; /* Texto verde más claro */
+}
+
+.header {
+  background-color: #4CAF50; /* Fondo verde más claro para el encabezado */
+  color: #ffffff; /* Texto blanco para el encabezado */
+  text-align: center;
+  padding: 10px;
+}
+
+.matricula-form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #4CAF50; /* Borde verde más claro */
+  border-radius: 10px;
+}
+
+fieldset {
+  margin-bottom: 20px;
+  border: 1px solid #4CAF50; /* Borde verde más claro */
+  padding: 10px;
+  border-radius: 8px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #4CAF50; /* Borde verde más claro */
+  border-radius: 4px;
+}
+
+/* Estilos para los nombres de las secciones */
+legend {
+  font-size: 16px;
+  font-weight: bold;
+  color: #4CAF50; /* Texto verde más claro */
+  margin-bottom: 10px;
+}
+
+/* Estilos adicionales para las etiquetas dentro de las secciones */
+fieldset label {
+  color: #4CAF50; /* Texto verde más claro */
+}
+
+/* Cambios en el fondo de los fieldset para mejorar la legibilidad */
+.matricula-form fieldset {
+  background-color: #f9f9f9; /* Fondo gris claro */
+}
+
+button {
+  background-color: #4CAF50; /* Fondo verde más claro para el botón */
+  color: #ffffff; /* Texto blanco para el botón */
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049; /* Cambio de color al pasar el mouse */
+}
+
+  
